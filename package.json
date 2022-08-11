@@ -10,7 +10,8 @@
     "lint": "yarn lint:sol && yarn lint:js",
     "lint:js": "./node_modules/.bin/eslint .",
     "lint:sol": "./node_modules/.bin/solhint ./contracts/\\*\\*/\\*.sol -w 0",
-    "test:sol": "./node_modules/.bin/hardhat test"
+    "test:sol": "./node_modules/.bin/hardhat test",
+    "deploy": "./node_modules/.bin/hardhat run ./scripts/deploy.ts"
   },
   "devDependencies": {
     "@ethersproject/abi": "^5.4.7",
